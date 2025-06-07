@@ -1,0 +1,147 @@
+/* services.css */
+.services-page {
+    background: #f8fafc;
+    min-height: 100vh;
+  }
+  
+  .services-hero {
+    background: linear-gradient(rgba(0, 87, 63, 0.85), rgba(0, 87, 63, 0.85)), 
+                url('../assets/download.jpeg') center/cover;
+    padding: 8rem 0 6rem;
+    color: white;
+    text-align: center;
+    height: 400px;
+  }
+  
+  .services-hero h1 {
+    font-size: 1.2rem;
+    color: white;
+    text-align: left;
+        opacity: 0.9;
+
+  }
+  
+  .services-hero .subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    max-width: 700px;
+    text-align: left;
+    
+  }
+  
+  .services-intro {
+    text-align: left;
+    padding: 1rem ;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .services-intro h2 {
+    font-size: 2rem;
+    color: #2d3748;
+  }
+  
+  .services-intro p {
+    color: #4a5568;
+    line-height: 1.7;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 2rem 0 6rem;
+  }
+  
+  .service-card {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #e2e8f0;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(47, 133, 90, 0.1);
+  }
+  
+  .service-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .service-icon {
+    font-size: 1.8rem;
+    color: #2F855A;
+  }
+  
+  .service-card h3 {
+    font-size: 1.3rem;
+    color: #2d3748;
+  }
+  
+  .service-description {
+    color: #4a5568;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  .service-highlights {
+    margin: 1.5rem 0;
+    padding-left: 1.5rem;
+  }
+  
+  .service-highlights li {
+    color: #4a5568;
+    margin-bottom: 0.5rem;
+    position: relative;
+  }
+  
+  .service-highlights li::before {
+    content: "•";
+    color: #2F855A;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  .service-cta {
+    background: none;
+    border: none;
+    color: #2F855A;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    padding: 0;
+    margin-top: 1rem;
+  }
+  
+  .service-cta span {
+    transition: transform 0.3s ease;
+  }
+  
+  .service-cta:hover span {
+    transform: translateX(5px);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .services-hero {
+      padding: 6rem 0 4rem;
+    }
+    
+    .services-hero h1 {
+      font-size: 2.2rem;
+    }
+    
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+  }

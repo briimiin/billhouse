@@ -1,0 +1,347 @@
+/* aboutus.css */
+.about-page {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  /* Hero Section */
+  
+.hero-about {
+  
+    color: white;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+  }
+  
+  .hero-content h1 {
+    font-size: 1.5 rem;
+  }
+  
+  .intro-text {
+    font-size: 15px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Core Identity */
+  .core-identity {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .vision-purpose {
+    display: grid;
+  }
+  
+  .vision, .purpose {
+    background: #f9f9f9;
+    padding: 18px;
+  }
+  
+  .vision h2, .purpose h2 {
+    color: #1A1A1A;
+    font-size: 1.3rem;
+    margin-bottom: 2px;
+  }
+  
+  .locations {
+    padding: 0 15px;
+  }
+  
+  .locations h2 {
+    font-size: 1.3rem;
+    color:#1A1A1A;
+    margin-bottom: 15px;
+  }
+  
+  .location-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+  }
+  
+  .location-item {
+    padding:10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Mission & Values */
+  .mission-section {
+    margin-top: 10px;
+
+    padding: 10px 0;
+    margin-bottom: 3px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .mission-content {
+    max-width: 800px;
+    margin-left: 18px;
+  }
+  
+  .mission-content h2 {
+    font-size: 1.3rem;
+    color: #1A1A1A;
+  }
+  
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .value-card {
+    background: #f9f9f9;
+    padding: 18px;
+  }
+  
+  .value-card h3 {
+    color: #1A1A1A;
+  }
+  
+  /* Global Impact */
+  .global-section {
+    padding: 18px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .global-section h2 {
+    font-size: 1.3rem;
+    margin-left: 18px;
+    color: #1A1A1A;
+  }
+  
+  .stats-container {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .stat-card {
+    background: white;
+    padding: 20px 25px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    min-width: 120px;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2F855A;
+    margin-bottom: 5px;
+  }
+  
+  /* History Timeline */
+/* Modern Timeline Styles */
+.history-section {
+  padding: 2rem 1rem;
+  background: #f9f9f9;
+  position: relative;
+}
+
+.section-title {
+  text-align: left;
+  margin-bottom: 2.3rem;
+  font-size: 1.3rem;
+  color: #1A1A1A;
+  position: relative;
+}
+
+
+.modern-timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 50px;
+}
+
+.modern-timeline::before {
+  content: '';
+  position: absolute;
+  left: 35px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, 
+  #2F855A 0%, 
+  #38A169 50%, 
+  #F0FFF4 100%);
+
+}
+
+.timeline-item {
+  display: flex;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.timeline-marker {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.year-bubble {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: white;
+  border: 3px solid #38A169;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #38A169;
+  font-weight: bold;
+  box-shadow: 0 4px 10px   #38A169 ;
+  position: relative;
+  z-index: 2;
+}
+
+.calendar-icon {
+  font-size: 1.2rem;
+  margin-bottom: 4px;
+}
+
+.year-bubble span {
+  font-size: 0.9rem;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 70px;
+  bottom: -3rem;
+  width: 2px;
+  background:   #38A169;
+  transform: translateX(-50%);
+}
+
+.timeline-item:last-child .timeline-line {
+  display: none;
+}
+
+.timeline-content {
+  margin-left: 2rem;
+  padding: 1.4rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  flex-grow: 1;
+  transform: translateY(-10px);
+}
+
+.event-title {
+  color: #1A1A1A;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.event-detail {
+  color: #1A1A1A;
+  line-height: 1.6;
+}
+
+/* Hover Effects */
+.timeline-item:hover .year-bubble {
+  transform: scale(1.1);
+  background: #38A169;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.timeline-item:hover .timeline-content {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .modern-timeline {
+    padding-left: 30px;
+  }
+  
+  .modern-timeline::before {
+    left: 15px;
+  }
+  
+  .year-bubble {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .timeline-content {
+    margin-left: 1rem;
+  }
+}
+  /* Team Section */
+  .team-section {
+    padding: 18px 0;
+  }
+  
+  .team-section h2 {
+    font-size: 1.5rem;
+    margin-left: 18px;
+    color:#1A1A1A;
+  }
+  
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .team-card {
+    background: #f9f9f9;
+    padding: 18px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .team-card h3 {
+    color: #1A1A1A;
+    margin-bottom: 5px;
+  }
+  
+  .role {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .core-identity {
+      grid-template-columns: 1fr;
+    }
+    
+    .hero-about {
+      padding: 40px 20px;
+    }
+    
+    .hero-content h1 {
+      font-size: 1.8rem;
+    }
+    
+    .milestone {
+      flex-direction: column;
+    }
+    
+    .year-bubble {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }

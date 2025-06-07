@@ -1,0 +1,189 @@
+/* Projects Section - Image Overlay Style */
+
+.projects-section {
+    padding: 15px 0;
+  
+  }
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .project-card {
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 280px; /* Fixed height for consistency */
+  }
+  
+  .project-image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .project-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .project-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgb(10, 10, 10));
+    padding: 1.5rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  
+  .project-overlay-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+    color: white;
+  
+  }
+  
+  .project-location {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: 700;
+        color: white;
+
+  
+  }
+  
+  .location-icon {
+    margin-right: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .view-more-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+  }
+  
+  .view-more-btn:hover {
+    background: var(--primary);
+    transform: translateX(5px);
+  }
+  
+  .arrow-icon {
+    font-size: 2rem;
+    color: white;
+  }
+  
+  .project-details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: rgba(0, 87, 63, 0.9);
+    padding: 1.5rem;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
+  .project-card:hover .project-details {
+    opacity: 1;
+  }
+  
+  .project-meta {
+    margin-bottom: 1rem;
+  }
+  
+  .project-sector {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 700;
+  
+  }
+  
+  .project-savings {
+    display: block;
+    font-weight: 600;
+    color: #fff;
+    font-size: 0.9rem;
+  
+  }
+  
+  .project-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .project-link::after {
+    margin-left: 0.5rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-link:hover::after {
+    transform: translateX(5px);
+  }
+  /* Icons Setup */
+/* Location Icon */
+.location-icon {
+    margin-right: 8px;
+    font-size: 14px;
+    color: #ffffff;
+  }
+  
+  /* Meta Icons */
+  .meta-icon {
+    color: #2F855A;
+    margin-right: 10px;
+    font-size: 16px;
+    min-width: 16px; /* Prevents icon container from shrinking */
+  }
+  
+  /* Arrow Icon */
+  .arrow-icon {
+    margin-left: 6px;
+    font-size: 12px;
+    transition: transform 0.2s ease;
+  }
+  
+  /* Hover Effects */
+  .project-link:hover .arrow-icon {
+    transform: translateX(3px);
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .location-icon,
+    .meta-icon {
+      font-size: 14px;
+    }
+    
+    .arrow-icon {
+      font-size: 11px;
+    }
+  }

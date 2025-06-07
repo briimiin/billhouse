@@ -1,0 +1,25 @@
+
+/* Layout.css */
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    color: #2d3748; /* Neutral-800 color */
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 12px 16px;
+    margin: 16px 0 0 16px;
+    border-radius: 4px;
+    transition: all 0.2s;
+  }
+  
+  .back-button:hover {
+    background: #f7fafc; /* Light gray background on hover */
+    color: #1a365d; /* Darker color on hover */
+  }
+  
+  .back-icon {
+    font-size: 0.9rem;
+  }
