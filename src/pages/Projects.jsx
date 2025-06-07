@@ -1,40 +1,10 @@
 import { FaMapMarkerAlt, FaArrowRight } from 'react-icons/fa';
-import download2 from '../assets/download2.jpeg';
-import download3 from '../assets/download3.jpeg';
-import download from '../assets/download.jpeg';
+import { projects } from './ProjectData';
 import './projects.css';
 import { Link } from 'react-router-dom'; // Add this impor
 
 export default function Projects() {
-  const projects = [
-    {
-      id: 1,
-      title: "Greenfield Hospital Complex",
-      
-      location: "Nakuru, Kenya",
-      role: "Cost Management",
-      sector: "Tech Semiconductor Facilities",
-      savings: "Saved client 4.2M",
-      image: download
-    },
-    {
-      title: "High-Rise Commercial Tower",
-      location: "Nakuru, Kenya",
-      sector: "Tech Semiconductor Facilities",
-      role: "Tender Analysis",
-      savings: "18% under budget",
-      image: download3
-    },
-    {
-      title: "Mixed-Use Development",
-      location: "Nakuru, Kenya",
-      sector: "Tech Semiconductor Facilities",
-      role: "Lifecycle Costing",
-      savings: "25-year cost forecast",
-      image: download2
-    }
-  ];
-
+ 
   return (
     <div className="projects-page">
       <section className="projects-section">

@@ -2,48 +2,18 @@ import './home.css';
 import { FaChartLine,FaMapMarkedAlt,FaArrowCircleRight, FaFileContract, FaCogs, FaShieldAlt, FaRuler, FaBalanceScale, FaMapMarkerAlt, FaIndustry, FaChartBar, FaArrowRight } from 'react-icons/fa';
 import { GiMoneyStack } from 'react-icons/gi';
 import { BsAwardFill } from 'react-icons/bs';
-import construction from '../assets/construction.jpeg';
-import download4 from '../assets/download4.jpeg';
-import download2 from '../assets/download2.jpeg';
 import download3 from '../assets/download3.jpeg';
-import download from '../assets/download.jpeg';
-import teamPhoto from '../assets/download.jpeg';
 import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
 import ContactModal from '../Components/ContactModal';  
+import { projects } from './ProjectData';
 
 
 
 
 export default function Home() {
   const [showContactModal, setShowContactModal] = useState(false);
-  const projects = [
-    {
-      title: "Greenfield Hospital Complex",
-      location : "Nakuru, Kenya",
-      role: "Cost Management",
-      sector: "Tech Semiconductor Facilities",
-      savings: "Saved client 4.2M",
-      image: download
-    },
-    {
-      title: "High-Rise Commercial Tower",
-      location : "Nakuru, Kenya",
-      sector: "Tech Semiconductor Facilities",
-      role: "Tender Analysis",
-      savings: "18% under budget",
-      image: download3
-    },
-    {
-      title: "Mixed-Use Development",
-      location : "Nakuru, Kenya",
-      sector: "Tech Semiconductor Facilities",
-      role: "Lifecycle Costing",
-      savings: "25-year cost forecast",
-      image: download2
-    }
-  ];
-
+ 
   const services = [
     { 
       title: "Cost Planning & Estimation",
@@ -210,7 +180,7 @@ export default function Home() {
               <span className="project-sector">{project.sector}</span>
               <span className="project-savings">{project.savings}</span>
             </div>
-            <a href="#" className="project-link">View project analysis</a>
+              <Link to={`/projects/${project.id}`} className="project-link" >View project analysis</Link>
           </div>
         </div>
       ))}
@@ -232,7 +202,7 @@ export default function Home() {
             <div className="service-icon">{service.icon}</div>
             <h3>{service.title}</h3>
           </div>
-          <p className="service-description">{service.description}</p>
+          <p className="service-descriiption">{service.description}</p>
           <div className="service-footer">
             <Link to="/Services" className="service-link">
               <span>Explore service</span>

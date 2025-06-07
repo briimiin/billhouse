@@ -70,7 +70,7 @@ export default function Services() {
       <div className="services-hero">
         <div className="container">
           <h1>Our Services</h1>
-          <p className="subtitle">cost management for construction projects</p>
+          <p className="subtitle">We offer a range of services that we offer, which allow us best to support our clients in the delivery of world-class projects.</p>
         </div>
       </div>
 

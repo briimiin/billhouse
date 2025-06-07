@@ -2,11 +2,12 @@
 .services-page {
     background: #f8fafc;
     min-height: 100vh;
+    
   }
   
   .services-hero {
-    background: linear-gradient(rgba(0, 87, 63, 0.85), rgba(0, 87, 63, 0.85)), 
-                url('../assets/download.jpeg') center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 47, 43, 0.85)), 
+    url('../assets/download.jpeg') center/cover;
     padding: 8rem 0 6rem;
     color: white;
     text-align: center;
@@ -14,7 +15,7 @@
   }
   
   .services-hero h1 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: white;
     text-align: left;
         opacity: 0.9;
@@ -22,7 +23,7 @@
   }
   
   .services-hero .subtitle {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     opacity: 0.9;
     max-width: 700px;
     text-align: left;
@@ -37,7 +38,7 @@
   }
   
   .services-intro h2 {
-    font-size: 2rem;
+    font-size: 1.3rem;
     color: #2d3748;
   }
   
