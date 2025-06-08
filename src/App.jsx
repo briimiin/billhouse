@@ -7,6 +7,7 @@ import Navbar from './Components/Navbar';
 import AboutUs from './pages/about';
 import ProjectDetails from './pages/ProjectDetails';
 import Footer from './Components/Footer';
+import OurTeam from './Components/OurTeam';
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
         <Route path="/projects/:id" element={<ProjectDetails />} />
         <Route path="/about" element={< AboutUs/>} />
         <Route path="/contact" element={<Contact />} />
-      
+        <Route path="/our-team" element={<OurTeam />} />
       </Routes>
       <Footer />
     </Router>

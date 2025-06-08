@@ -3,6 +3,8 @@ import './aboutus.css';
 import download3 from '../assets/download3.jpeg';
 import { motion } from "framer-motion";
 import { FaCalendarAlt } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+
 
 const AboutUs = () => {
   // Data for reusable sections
@@ -175,15 +177,20 @@ const AboutUs = () => {
 
       {/* Team Section */}
       <section className="team-section">
-        <h2>Meet Our Leadership</h2>
-        <div className="team-grid">
-          {team.map((member, index) => (
-            <div key={index} className="team-card">
-              <h3>{member.name}</h3>
-              <p className="role">{member.role}</p>
-              <p className="bio">{member.bio}</p>
-            </div>
-          ))}
+        <h2>Our People</h2>
+        <div className="team-preview" onClick={() => navigate('/our-team')}>
+          <img 
+            src={download3} 
+            alt="BillHouse Team" 
+            className="team-group-photo"
+          />
+          <div className="team-overlay">
+            <h3>Meet Our Team</h3>
+
+          <Link to="/our-team" className="explore-team-btn">
+            Explore Team Members →
+          </Link>
+          </div>
         </div>
       </section>
     </div>

@@ -115,7 +115,7 @@ h1, h2, h3 {
   display: inline-flex;
   align-items: center;
   padding: 12px 24px 12px 50px; /* Extra left padding for icon */
-  border-radius: 30px;
+  border-radius: 8px;
   background: #2F855A;
   color: white;
   border: none;
