@@ -7,6 +7,8 @@ import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
 import ContactModal from '../Components/ContactModal';  
 import { projects } from './ProjectData';
+import { FaUserTie } from 'react-icons/fa';
+
 
 
 
@@ -79,13 +81,15 @@ export default function Home() {
               
               
               <div className="divider-line"></div>
-                      <button 
+                <button 
                   className="hero-cta-button"
                   onClick={() => setShowContactModal(true)}
                 >
+                  <div className="button-profile-icon">
+                    <FaUserTie /> {/* Using react-icons */}
+                  </div>
                   <strong>Contact Representative</strong>
                 </button>
-              
 
               {/* Contact Modal */}
               {showContactModal && (
@@ -199,8 +203,8 @@ export default function Home() {
       {services.map((service, index) => (
         <div key={index} className="service-card">
           <div className="service-header">
-            <div className="service-icon">{service.icon}</div>
-            <h3>{service.title}</h3>
+            <div >{service.icon}</div>
+            <h3 className="service-in">{service.title}</h3>
           </div>
           <p className="service-descriiption">{service.description}</p>
           <div className="service-footer">

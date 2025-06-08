@@ -110,22 +110,45 @@ h1, h2, h3 {
   color: white;
   margin-bottom: 1.5rem;
 }
-/* Updated contact CTA to button */
 .hero-cta-button {
-  background-color: white;
-  color: var(--primary);
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 24px 12px 50px; /* Extra left padding for icon */
+  border-radius: 30px;
+  background: #2F855A;
+  color: white;
   border: none;
-  padding: 10px 10px;
-  font-weight: 600;
-  border-radius: 4px;
+  font-size: 0.9rem;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
-  width: 60%;
+  transition: all 0.3s ease;
+  overflow: hidden; /* Keeps the circle contained */
+}
+
+.button-profile-icon {
+  position: absolute;
+  left: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: white;
+  border-radius: 50%;
+  color: #1a1a1a;
+  font-size: 1.2rem;
 }
 
 .hero-cta-button:hover {
-  background-color: rgba(255, 255, 255, 0.9);
+  background: #276749;
   transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(47, 133, 90, 0.3);
+}
+
+/* If you want the icon to animate on hover */
+.hero-cta-button:hover .button-profile-icon {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
 }
 /* Responsive */
 @media (max-width: 768px) {
@@ -202,7 +225,7 @@ h1, h2, h3 {
 }
 /* Modern Services Section */
 .services-section {
-  background: white;
+  background: #f9f9f9;
 }
 
 .section-header {
@@ -225,12 +248,12 @@ h1, h2, h3 {
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .service-card {
   background: white;
-  border-radius: 12px;
+  border-radius: 3px;
   padding: 1rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.03);
   border: 1px solid #F1F5F9;
@@ -250,7 +273,7 @@ h1, h2, h3 {
 }
 
 .service-icon {
-  font-size: 1.3rem;
+  font-size: 1rem;
   color: #2F855A;
   flex-shrink: 0;
 }
@@ -262,7 +285,9 @@ h1, h2, h3 {
   color: #1E293B;
 }
 
-
+.service-in {
+  font-size: 1rem;
+}
 
 .service-footer {
   border-top: 1px solid #F1F5F9;

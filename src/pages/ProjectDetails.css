@@ -57,27 +57,47 @@
 }
 
 .project-key-facts {
+  margin-top: 1rem;
   display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 1.5rem; /* Consistent spacing between cards */
   margin-bottom: 1rem;
+  overflow-x: auto; /* Allows horizontal scrolling if needed */
+  padding-bottom: 0.5rem; /* Space for scrollbar */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
 }
 
 .fact-card {
+  flex: 0 0 auto; /* Prevent stretching/shrinking */
+  min-width: 200px; /* Minimum card width */
   display: flex;
   align-items: center;
   background-color: white;
-  border-radius: 10px;
+  border-radius: 3px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
   padding: 1.5rem;
-  flex: 1 1 250px;
-  max-width: 250px;
-  margin-left: 1rem;
-  margin-top: 1rem;
+  margin: 0; /* Remove individual margins */
+}
+
+/* Optional: Hide scrollbar visually but keep functionality */
+.project-key-facts::-webkit-scrollbar {
+  height: 4px;
+}
+
+.project-key-facts::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.1);
+  border-radius: 2px;
+}
+
+/* Responsive tweak for very small screens */
+@media (max-width: 480px) {
+  .fact-card {
+    min-width: 180px;
+    padding: 1.2rem;
+  }
 }
 
 .fact-card svg {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: #1A1A1A;
   margin-right: 1rem;
 }
@@ -191,7 +211,7 @@
   display: inline-block;
   padding: 0.4rem 0.8rem;
   margin: 0 0.5rem 0.5rem 0;
-  border-radius: 15px;
+  border-radius: 3px;
   font-size: 0.75rem;
   font-weight: 500;
 }

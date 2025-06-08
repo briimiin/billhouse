@@ -18,7 +18,8 @@
     font-size: 1.3rem;
     color: white;
     text-align: left;
-        opacity: 0.9;
+    opacity: 0.9;
+        
 
   }
   
@@ -31,10 +32,8 @@
   }
   
   .services-intro {
-    text-align: left;
-    padding: 1rem ;
+    padding: 0.9rem ;
     max-width: 800px;
-    margin: 0 auto;
   }
   
   .services-intro h2 {
@@ -51,16 +50,13 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem;
-    padding: 2rem 0 6rem;
+    padding: 1rem 0 1rem;
   }
   
   .service-card {
-    background: white;
-    border-radius: 8px;
-    padding: 2rem;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid #e2e8f0;
+    background: #f9f9f9 ;
+    border-radius: 3px;
+    padding: 1rem;
   }
   
   .service-card:hover {
@@ -74,15 +70,18 @@
     gap: 1rem;
     margin-bottom: 1rem;
   }
+  .service-header h3 {
+   font-size: 1rem;
+  }
   
   .service-icon {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     color: #2F855A;
   }
   
   .service-card h3 {
-    font-size: 1.3rem;
-    color: #2d3748;
+    font-size: 1.2rem;
+    color: #1a1a1a;
   }
   
   .service-description {
@@ -92,7 +91,7 @@
   }
   
   .service-highlights {
-    margin: 1.5rem 0;
+    margin: 1.3rem 0;
     padding-left: 1.5rem;
   }
   
@@ -146,3 +145,34 @@
       grid-template-columns: 1fr;
     }
   }
+  /* services.css additions */
+.view-more-container {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.view-more-btn {
+  background: none;
+  border: px solid #2b6cb0;
+  color: #2b6cb0;
+  padding: 0.8rem 2rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.view-more-btn:hover {
+  background: #2b6cb0;
+  color: white;
+}
+
+/* Service card enhancements */
+.service-card {
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}

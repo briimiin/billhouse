@@ -34,6 +34,8 @@
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     border-bottom: 1px solid #eee;
+        background: #f9f9f9;
+
   }
   
   .vision-purpose {
@@ -111,6 +113,8 @@
   .global-section {
     padding: 18px 0;
     border-bottom: 1px solid #eee;
+        background: #f9f9f9;
+
   }
   
   .global-section h2 {
@@ -120,6 +124,7 @@
   }
   
   .stats-container {
+    
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
@@ -128,10 +133,9 @@
   }
   
   .stat-card {
-    background: white;
+    background: #f9f9f9;
     padding: 20px 25px;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     text-align: center;
     min-width: 120px;
   }
@@ -235,7 +239,7 @@
 .timeline-content {
   margin-left: 2rem;
   padding: 1.4rem;
-  background: white;
+    background: #f9f9f9;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   flex-grow: 1;
@@ -245,12 +249,13 @@
 .event-title {
   color: #1A1A1A;
   margin-bottom: 0.5rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .event-detail {
   color: #1A1A1A;
   line-height: 1.6;
+  
 }
 
 /* Hover Effects */
