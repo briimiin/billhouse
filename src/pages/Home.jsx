@@ -9,6 +9,7 @@ import ContactModal from '../Components/ContactModal';
 import { projects } from './ProjectData';
 import { FaUserTie } from 'react-icons/fa';
 
+import imagec2 from '../assets/image copy 2.png'
 
 
 
@@ -152,10 +153,12 @@ export default function Home() {
 
       {/* Team Section */}
       <section className="team-section">
+          <div className="section-wrapper">
+
         <h2>Our People</h2>
         <div className="team-preview" onClick={() => navigate('/our-team')}>
           <img 
-            src={download3} 
+            src={imagec2} 
             alt="BillHouse Team" 
             className="team-group-photo"
           />
@@ -166,6 +169,7 @@ export default function Home() {
             Explore Team Members →
           </Link>
           </div>
+        </div>
         </div>
       </section>
 {/* Projects Section */}

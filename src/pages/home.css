@@ -332,6 +332,7 @@ h1, h2, h3 {
   padding: 15px 0;
   background-color: var(--dark);
   color: white;
+  width: 100%;
 }
 
 .credentials-grid {
@@ -676,5 +677,28 @@ h1, h2, h3 {
 
   h3 {
     font-size: 1rem;
+  }
+}
+.section-wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+/* On screens 1024px and above, center and limit width */
+@media (min-width: 1024px) {
+  .background-image-wrapper {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 64vw; /* or try 70vw for tighter width */
+  }
+  .credentials-section {
+        width: 64vw; /* or use max-width: 1200px for fixed width */
+    margin: 0 auto;
+  }
+
+}
+
+@media (min-width: 1024px) {
+  .section-wrapper {
+    width: 64vw;
   }
 }

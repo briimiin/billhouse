@@ -8,11 +8,22 @@
   .services-hero {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 47, 43, 0.85)), 
     url('../assets/download.jpeg') center/cover;
-    padding: 8rem 0 6rem;
+    padding: 8rem  6rem;
     color: white;
     text-align: center;
-    height: 400px;
+    height: 450px;
+    width: 100%;
+
   }
+
+
+/* On larger screens, center and limit width */
+@media (min-width: 1024px) {
+  .services-hero {
+    width: 64vw; /* Or use 70vw or even max-width: 1200px for fixed content width */
+    margin: 0 auto;
+  }
+}
   
   .services-hero h1 {
     font-size: 1.3rem;

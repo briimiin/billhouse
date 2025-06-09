@@ -4,7 +4,7 @@ import download3 from '../assets/download3.jpeg';
 import { motion } from "framer-motion";
 import { FaCalendarAlt } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-
+import imagec2 from '../assets/image copy 2.png'
 
 const AboutUs = () => {
   // Data for reusable sections
@@ -180,7 +180,7 @@ const AboutUs = () => {
         <h2>Our People</h2>
         <div className="team-preview" onClick={() => navigate('/our-team')}>
           <img 
-            src={download3} 
+            src={imagec2} 
             alt="BillHouse Team" 
             className="team-group-photo"
           />
