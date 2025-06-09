@@ -352,15 +352,14 @@
   }
   /* About Us Team Preview Section */
 .team-section {
-  padding: 5rem 0;
-  background: #f8fafc;
-  text-align: center;
-}
+  padding: 2rem ;
+  background: #f9f9f9;
+  text-align: left;}
 
 .team-section h2 {
-  font-size: 2.5rem;
-  color: #1a365d;
-  margin-bottom: 2rem;
+  font-size: 1.3rem;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
   position: relative;
   display: inline-block;
 }
@@ -380,7 +379,7 @@
   position: relative;
   max-width: 1000px;
   margin: 0 auto;
-  border-radius: 16px;
+  border-radius: 3px;
   overflow: hidden;
   box-shadow: 0 20px 40px rgba(0,0,0,0.15);
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
@@ -398,7 +397,6 @@
   object-fit: cover;
   filter: brightness(0.9);
 }
-
 .team-overlay {
   position: absolute;
   top: 0;
@@ -407,31 +405,26 @@
   bottom: 0;
   background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,47,43,0.7));
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
-
-.team-overlay h3 {
-  font-size: 2.8rem;
-  margin-bottom: 1.5rem;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  justify-content: flex-start; /* move content vertically to the bottom */
+  align-items: flex-start;   /* align horizontally to the left */
+  padding: 1rem;
 }
 
 .explore-team-btn {
+  align-self: flex-end;       /* push it to the bottom */
+  margin-top: auto;           /* allow space to grow above */
+  margin-left: 0;   
   background: transparent;
-  border: 2px solid white;
   color: white;
-  padding: 1rem 2.5rem;
-  border-radius: 50px;
-  font-size: 1.1rem;
+  padding: 0.1rem ;
+  font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  width: fit-content;
 }
 
 .explore-team-btn:hover {
@@ -444,7 +437,7 @@
 /* Responsive */
 @media (max-width: 768px) {
   .team-section {
-    padding: 3rem 0;
+    padding: 1rem ;
   }
   
   .team-group-photo {
@@ -452,6 +445,9 @@
   }
   
   .team-overlay h3 {
-    font-size: 2rem;
+    font-size: 1.1rem;
   }
 }
+/* * {
+  outline: 1px solid red; 
+} */

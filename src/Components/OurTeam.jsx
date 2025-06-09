@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { FaLinkedin, FaEnvelope, FaArrowLeft } from 'react-icons/fa';
+import { FaLinkedin, FaEnvelope, FaArrowLeft,FaTimes } from 'react-icons/fa';
 import './team.css';
-
+import image from '../assets/image.png'; 
+import imagecopy from '../assets/image.png'; 
 const OurTeam = () => {
   const [selectedMember, setSelectedMember] = useState(null);
   const navigate = useNavigate();
@@ -10,18 +11,32 @@ const OurTeam = () => {
   const team = [
     {
       id: 1,
-      name: "John Doe",
-      role: "CEO",
+      name: "Wesley Too",
+      role: "CEO - Director",
       bio: "20+ years in construction management",
-      image: "/ceo.jpg",
-      department: "Leadership",
-      fullBio: "John founded BillHouse in 2010...",
-      education: "MSc Construction Management, MIT",
+      image: image,
+      department: "Leaders",
+      fullBio: "As Group General Counsel Wesley brings over 10 years of varied QS experience as the manager.Encompassing his more recent inhouse experience in the construction and finance industries to provide clear structure, advice and support to deliver fundamental change and improvement in legal strategy, process and compliance. Jane has an acute attention to detail in all aspects of her work. Using logical, analytical and creative solutions to ensure the legal strategy of the company aligns with its effective and compliant business functioning.",
+      education: "Bsc Quantity Survey, TUK ",
       social: {
         linkedin: "#",
         email: "john@billhouse.com"
       }
     },
+        {
+      id: 2,
+      name: "John Doe",
+      role: "Quanity Surveyor",
+      bio: "20+ years in construction management",
+      image: imagecopy,
+      department: "Engineers",
+      fullBio: "John founded BillHouse in 2010... bringing over 20 years of experience in construction management. His expertise spans across various sectors including healthcare, commercial, and residential projects. John is passionate about leveraging technology to enhance project delivery and cost efficiency.",
+      education: "MSc Construction Management, MIT",
+      social: {
+        linkedin: "#",
+        email: "john@billhouse.com"
+      }
+    }
     // Add other team members
   ];
 
@@ -29,10 +44,7 @@ const OurTeam = () => {
 
   return (
     <div className="team-page">
-      <button className="back-button" onClick={() => navigate(-1)}>
-        <FaArrowLeft /> Back to About
-      </button>
-
+    
       <div className="team-hero">
         <h1>Our Team</h1>
         <p>The professionals behind our success</p>
@@ -50,16 +62,21 @@ const OurTeam = () => {
       {/* Team Grid */}
       <div className="team-members-grid">
         {team.map(member => (
-          <div 
-            key={member.id} 
-            className="team-member-card"
-            onClick={() => setSelectedMember(member)}
-          >
-            <img src={member.image} alt={member.name} />
+              <div 
+        key={member.id} 
+        className="team-member-card"
+        onClick={() => setSelectedMember(member)}
+      >
+        <div className="image-container">
+          <img src={member.image} alt={member.name} />
+          <div className="overlay-text">
             <h3>{member.name}</h3>
             <p className="role">{member.role}</p>
             <p className="department">{member.department}</p>
           </div>
+        </div>
+      </div>
+
         ))}
       </div>
 
@@ -72,7 +89,7 @@ const OurTeam = () => {
               className="close-modal"
               onClick={() => setSelectedMember(null)}
             >
-              ×
+             <FaTimes />
             </button>
             
             <div className="modal-header">
@@ -92,18 +109,18 @@ const OurTeam = () => {
             </div>
 
             <div className="modal-body">
+               {/* <h3>Education</h3> */}
+              <p>{selectedMember.education}</p>
+
               <h3>About</h3>
               <p>{selectedMember.fullBio}</p>
 
-              <h3>Education</h3>
-              <p>{selectedMember.education}</p>
-
-              <h3>Key Projects</h3>
-              <ul>
+             
+              {/* <ul>
                 {selectedMember.projects?.map((project, i) => (
                   <li key={i}>{project}</li>
                 ))}
-              </ul>
+              </ul> */}
             </div>
           </div>
         </div>

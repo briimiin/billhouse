@@ -150,6 +150,24 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Team Section */}
+      <section className="team-section">
+        <h2>Our People</h2>
+        <div className="team-preview" onClick={() => navigate('/our-team')}>
+          <img 
+            src={download3} 
+            alt="BillHouse Team" 
+            className="team-group-photo"
+          />
+          <div className="team-overlay">
+            <h3 className='meetourteam'></h3>
+
+          <Link to="/our-team" className="explore-team-btn">
+            Explore Team Members →
+          </Link>
+          </div>
+        </div>
+      </section>
 {/* Projects Section */}
 <section className="projects-section">
   <div className="container">

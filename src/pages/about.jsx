@@ -185,10 +185,9 @@ const AboutUs = () => {
             className="team-group-photo"
           />
           <div className="team-overlay">
-            <h3>Meet Our Team</h3>
 
           <Link to="/our-team" className="explore-team-btn">
-            Explore Team Members →
+            Check out our Team Members →
           </Link>
           </div>
         </div>
